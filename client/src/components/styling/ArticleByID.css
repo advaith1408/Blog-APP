@@ -1,0 +1,54 @@
+.article-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #CEBCB8; /* Cloud color */
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .article-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #28221E; /* Zeus color */
+    margin: 0;
+  }
+  
+  .article-date {
+    text-align: right;
+    font-size: 0.9rem;
+    color: #7F6951; /* Shadow color */
+    font-style: italic;
+    opacity: 0.9;
+  }
+  
+  .article-date small {
+    display: block;
+    margin-top: 2px;
+  }
+  
+  .article-author {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .article-author img {
+    border: 3px solid #614E41;
+    padding: 4px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .article-author img:hover {
+    transform: scale(1.1);
+  }
+  
+  .article-author p {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #7F6951;
+    margin-top: 10px;
+  }
+  

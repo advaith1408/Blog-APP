@@ -1,0 +1,9 @@
+.signin-container {
+    background: linear-gradient(to bottom, #28221E, #7F6951);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  

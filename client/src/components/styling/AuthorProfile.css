@@ -1,0 +1,30 @@
+.author-profile {
+    background-color: #CEBCB8;
+    min-height: 100vh;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .author-profile h2 {
+    color: #28221E;
+    font-weight: bold;
+  }
+  
+  .author-profile ul {
+    background-color: #614E41;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .author-profile .btn {
+    background-color: #7F6951;
+    border: none;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .author-profile .btn:hover {
+    background-color: #614E41;
+  }
+  

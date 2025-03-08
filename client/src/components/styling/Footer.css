@@ -1,0 +1,23 @@
+.footer {
+    background-color: #28221E; /* Zeus */
+    color: #CEBCB8; /* Cloud */
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  
+  .footer-content h3 {
+    font-size: 1.5rem;
+    color: #CEBCB8;
+  }
+  
+  .footer-content a {
+    color: #7F6951; /* Shadow */
+    text-decoration: none;
+  }
+  
+  .footer-content a:hover {
+    text-decoration: underline;
+  }
+  

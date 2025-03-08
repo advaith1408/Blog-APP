@@ -1,0 +1,61 @@
+.container {
+    background-color: #CEBCB8;
+    min-height: 100vh;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card {
+    background-color: #614E41;
+    color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .author-details img {
+    border: 2px solid #7F6951;
+  }
+  
+  .card-title {
+    color: #CEBCB8;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #E0D6D2;
+  }
+  
+  .btn-primary {
+    background-color: #28221E;
+    border-color: #28221E;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #7F6951;
+    border-color: #7F6951;
+  }
+  
+  .card-footer {
+    background-color: #7F6951;
+    color: #E0D6D2;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  

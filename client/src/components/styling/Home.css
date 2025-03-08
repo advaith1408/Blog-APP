@@ -1,0 +1,58 @@
+
+.role-card {
+    background-color: #F3EDEB;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #7F6951;
+  }
+  
+  .role-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #28221E;
+    margin-bottom: 15px;
+  }
+  
+  .role-options {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+  }
+  
+  .role-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .form-check-input {
+    transform: scale(1.2);
+    accent-color: #614E41;
+    cursor: pointer;
+  }
+  
+  .form-check-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #28221E;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 500px) {
+    .role-card {
+      max-width: 90%;
+      padding: 15px;
+    }
+    .role-options {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  body {
+    background-color: #CEBCB8 !important;
+  }
+  
