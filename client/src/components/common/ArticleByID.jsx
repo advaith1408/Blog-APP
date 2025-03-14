@@ -128,22 +128,23 @@ async function addComment(commentObj){
             <img src={state.authorData.profileImageUrl} width="60px" className="rounded-circle" alt="Author" />
             <p className="mt-2 text-secondary">{state.authorData.nameOfAuthor}</p>
           </div>
-          {currentUser && currentUser.role === 'author' && (
-            <div className="d-flex mb-3">
-              <button className="me-2 btn btn-light" onClick={enableEdit}>
-                <FaEdit className="text-warning" />
+          {currentUser && currentUser.role === 'author' && currentUser.email === state.authorData.email && (
+       <div className="d-flex mb-3">
+          <button className="me-2 btn btn-light" onClick={enableEdit}>
+            <FaEdit className="text-warning" />
               </button>
               {state.isArticleActive ? (
                 <button className="me-2 btn btn-light" onClick={deleteArticle}>
-                  <MdDelete className="text-danger" />
+                <MdDelete className="text-danger" />
                 </button>
-              ) : (
-                <button className="me-2 btn btn-light" onClick={restoreArticle}>
-                  <MdRestore className="text-info" />
-                </button>
+               ) : (
+               <button className="me-2 btn btn-light" onClick={restoreArticle}>
+               <MdRestore className="text-info" />
+               </button>
+               )}
+        </div>
               )}
-            </div>
-          )}
+
           <div className="card p-4 shadow-sm">
             <p className="lead">{state.content}</p>
           </div>
