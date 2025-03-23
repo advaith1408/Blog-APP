@@ -108,5 +108,18 @@ Content-Type: application/json
   "isActive": true
 }
 
+###
+GET http://localhost:3000/admin-api
 
 
+###
+GET http://localhost:3000/author-api
+
+
+###
+PATCH http://localhost:3000/admin-api/admin/block-unblock/67dc3bfb61be54a48f579999
+Content-Type: application/json
+
+{
+  "isActive": false
+}

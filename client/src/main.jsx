@@ -15,6 +15,8 @@ import AuthorProfile from './components/author/AuthorProfile.jsx';
 import PostArticle from './components/author/PostArticle.jsx';
 import 'bootstrap/dist/css/bootstrap.css';
 import UserAuthorProvider from './contexts/userAuthorContext.jsx'; // ✅ Correct Import
+import AdminDashboard from './components/admin/AdminDashboard.jsx';
+import ManageUsers from './components/admin/ManageUsers.jsx';
 
 const browserRouterObj = createBrowserRouter([
   {
@@ -31,6 +33,7 @@ const browserRouterObj = createBrowserRouter([
           { path: "articles", element: <Articles /> },
           { path: "articleId", element: <ArticleByID /> },
           { path: "", element: <Navigate to="articles" /> },
+          { path: "users", element: <ManageUsers /> }, // ✅ Added ManageUsers route
         ],
       },
       {
@@ -42,7 +45,18 @@ const browserRouterObj = createBrowserRouter([
           { path: "article", element: <PostArticle /> },
           { path: "", element: <Navigate to="articles" /> },
         ],
-      }      
+      },
+      {
+        path: "admin-profile/:email",
+        element: <AdminDashboard />,
+        children: [
+          { path: "articles", element: <Articles /> },
+          { path: "article/:articleId", element: <ArticleByID /> },
+          { path: "", element: <Navigate to="articles" /> },
+          { path: "users", element: <ManageUsers /> }, // ✅ Added ManageUsers route
+        ],
+      },
+
     ],
   },
 ]);
